@@ -14,7 +14,7 @@ module.exports = {
   "framework": "@storybook/react",
   
   // Fixes Node 18 Hash algorithm issue
-  "webpack": async (config) => {
+  "webpackFinal": async (config) => {
     config.output.hashFunction ='sha256'
     return config
   }

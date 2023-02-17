@@ -17,20 +17,19 @@
     "prepublishOnly": "yarn install && yarn run build",
     "build:watch": "tsup --watch",
     "yalc:watch": "tsup src/index.ts --watch --onSuccess \"yalc push\"",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "cross-env NODE_OPTIONS=\"--openssl-legacy-provider\" start-storybook -p 6006",
+    "build-storybook": "cross-env NODE_OPTIONS=\"--openssl-legacy-provider\" build-storybook"
   },
   "prettier": "@nexus/prettier-config",
   "peerDependencies": {},
   "dependencies": {
+    "@storybook/react": "^6.5.16",
     "native-base": "^3.4.25",
     "react": ">=18.2.0",
     "react-dom": ">=18.2.0",
-    "react-native": "^0.71.3",
     "react-native-safe-area-context": "3.3.2",
     "react-native-svg": "12.1.1",
-    "react-native-web": "0.17.1",
-    "@storybook/react": "^6.5.16"
+    "react-native-web": "0.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -50,6 +49,7 @@
     "@typescript-eslint/parser": "^5.10.2",
     "babel-loader": "^8.3.0",
     "babel-plugin-react-native-web": "^0.18.12",
+    "cross-env": "^7.0.3",
     "esbuild": "^0.14.17",
     "esbuild-runner": "^2.2.1",
     "eslint": "^8.8.0",
