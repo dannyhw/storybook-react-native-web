@@ -1,0 +1,9 @@
+{
+  "name": "@nexus/prettier-config",
+  "private": true,
+  "version": "0.1.272",
+  "main": "index.js",
+  "scripts": {
+    "release": "echo 'NOOP'"
+  }
+}

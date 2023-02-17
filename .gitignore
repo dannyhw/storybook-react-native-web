@@ -1,0 +1,25 @@
+# Misc
+*.log
+*.tsbuildinfo
+*.env
+packages/**/lib/**
+packages/**/.ultra.cache.json
+packages/**/storybook-static/**
+
+# Dependencies
+node_modules
+
+# MacOS
+.DS_Store
+
+# IDE
+.idea/
+
+# Testing
+junit.xml
+
+# Code coverage temp folders
+coverage-*/
+
+# Vim
+*.swp

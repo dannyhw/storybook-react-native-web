@@ -1,0 +1,24 @@
+{
+  "exclude": ["node_modules", "**/*/lib", "**/*.test.ts"],
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": null,
+    "outDir": "./lib",
+    "declarationDir": "./lib",
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "strict": true,
+    "target": "es2022",
+    "lib": ["es2022", "dom", "es5", "es6"],
+    "paths": {
+      "@nexus/*": ["./packages/*"]
+    }
+  }
+}
