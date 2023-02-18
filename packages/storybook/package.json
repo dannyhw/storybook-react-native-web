@@ -32,6 +32,7 @@
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
+    "metro-react-native-babel-preset": "^0.75.0",
     "@babel/core": "^7.20.12",
     "@nexus/eslint-config": "^0.1.2",
     "@nexus/prettier-config": "^0.1.2",
